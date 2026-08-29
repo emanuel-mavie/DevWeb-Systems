@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Defina como imagina o seu site com a DevWeb Systems.">
+    <title>Imagine o seu site | DevWeb Systems</title>
+    <link rel="stylesheet" href="/estilo/style.css">
+    <script src="/script/projeto.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="topbar">
+
+        <a class="brand" href="index.html">
+            DevWeb <span>Systems</span>
+        </a>
+
+        <button class="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="projeto.html" class="active">Seu projeto</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="page-hero section-block">
+
+    <div class="page-hero-grid">
+
+        <div class="page-hero-copy">
+
+            <p class="eyebrow">
+                Crie a sua ideia
+            </p>
+
+            <h1>
+                Como imagina o seu site?
+            </h1>
+
+            <p>
+                Responda a algumas perguntas e receba uma sugestão
+                inicial para o seu projeto.
+            </p>
+
+        </div>
+
+        <div class="page-hero-panel">
+
+            <span>Personalização</span>
+
+            <strong>
+                As suas respostas ajudam-nos a entender melhor
+                o que precisa.
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section-block">
+
+    <div class="project-layout">
+
+        <article class="project-form-card">
+
+            <div class="section-title-left">
+
+                <p class="eyebrow">
+                    Formulário
+                </p>
+
+                <h2>
+                    Conte-nos a sua ideia
+                </h2>
+
+                <p>
+                    Não precisa de conhecimentos técnicos.
+                </p>
+
+            </div>
+
+            <form action="sugestao.php"
+                  method="POST"
+                  id="projectForm">
+
+                <div class="form-group">
+
+                    <label for="nome">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="O seu nome"
+                        autocomplete="name"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seu@email.com"
+                        autocomplete="email"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="tipo">
+                        Que tipo de site pretende?
+                    </label>
+
+                    <select id="tipo" name="tipo" required>
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="Institucional">
+                            Site institucional
+                        </option>
+
+                        <option value="Loja">
+                            Loja online
+                        </option>
+
+                        <option value="Portfolio">
+                            Portfólio
+                        </option>
+
+                        <option value="Blog">
+                            Blog / Notícias
+                        </option>
+
+                        <option value="Sistema">
+                            Sistema web
+                        </option>
+
+                        <option value="Outro">
+                            Outro
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="objetivo">
+                        Qual é o principal objetivo?
+                    </label>
+
+                    <select id="objetivo"
+                            name="objetivo"
+                            required>
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="Divulgar">
+                            Divulgar uma empresa ou projeto
+                        </option>
+
+                        <option value="Vender">
+                            Vender produtos ou serviços
+                        </option>
+
+                        <option value="Informar">
+                            Informar e disponibilizar conteúdos
+                        </option>
+
+                        <option value="Comunidade">
+                            Criar uma comunidade
+                        </option>
+
+                        <option value="Gerir">
+                            Gerir informações ou processos
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="publico">
+                        Quem vai utilizar o site?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="publico"
+                        name="publico"
+                        placeholder="Ex.: estudantes, clientes, empresas..."
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="estilo">
+                        Que estilo prefere?
+                    </label>
+
+                    <select id="estilo"
+                            name="estilo"
+                            required>
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="Moderno">
+                            Moderno e tecnológico
+                        </option>
+
+                        <option value="Simples">
+                            Simples e minimalista
+                        </option>
+
+                        <option value="Profissional">
+                            Profissional e corporativo
+                        </option>
+
+                        <option value="Criativo">
+                            Criativo e colorido
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="cores">
+                        Que cores gostaria de utilizar?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="cores"
+                        name="cores"
+                        placeholder="Ex.: azul e branco"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="funcionalidades">
+                        Que funcionalidades gostaria de ter?
+                    </label>
+
+                    <textarea
+                        id="funcionalidades"
+                        name="funcionalidades"
+                        placeholder="Ex.: formulário, login, pagamentos, notícias..."
+                        required></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="observacoes">
+                        Alguma ideia adicional?
+                    </label>
+
+                    <textarea
+                        id="observacoes"
+                        name="observacoes"
+                        placeholder="Escreva outras ideias que tenha..."
+                        rows="4"></textarea>
+
+                </div>
+
+                <button type="submit" class="button">
+                    Receber sugestão
+                </button>
+
+            </form>
+
+        </article>
+
+        <aside class="suggestion-preview">
+
+            <div class="preview-icon">
+                ✦
+            </div>
+
+            <p class="eyebrow">
+                Sugestão rápida
+            </p>
+
+            <h2 id="suggestionTitle">
+                O seu site começa aqui
+            </h2>
+
+            <p id="suggestionText">
+                Preencha o formulário e iremos apresentar uma
+                sugestão baseada nas suas escolhas.
+            </p>
+
+            <div class="preview-list">
+
+                <div>
+                    <span>01</span>
+                    <p>Objetivo</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Estrutura</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Experiência</p>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 DevWeb Systems. Tecnologia com propósito.</p>
+</footer>
+
+</body>
+</html>
